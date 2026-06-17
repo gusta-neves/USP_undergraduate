@@ -34,4 +34,13 @@ public class ExemploTipos {
     Double boxrealpreciso = new Double(realpreciso);
     Boolean boxbooleano = new Boolean(booleano);
     Character boxcaractere = new Character(caractere);
+
+    /*
+    Contêineres imutáveis para os tipos primitivos
+    Permite você “usar” primitivos nos contextos que pedem objetos
+    Caso típico de quando você usa coleções
+    Não os use se puder evitar!
+    Deixe a linguagem fazer o autoboxing e o auto-unboxing para
+    você
+    */
 }

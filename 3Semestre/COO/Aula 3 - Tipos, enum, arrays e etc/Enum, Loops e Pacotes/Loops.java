@@ -10,4 +10,13 @@ public class Loops {
 
         return sum1;
     }
+
+    public int calculateSum2() {
+        int sum2 = 0;
+        for (int i = 0; i < a.length; i++) {
+            sum2 += a[i];
+        }
+
+        return sum2;
+    }
 }

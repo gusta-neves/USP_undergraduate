@@ -1,0 +1,21 @@
+Suponha que:
+
+public class Número extends Object { ... }
+public class NúmeroImaginário extends Número { ... }
+
+Pergunta. O método:
+
+public Número devolveUmNúmero() {
+...
+
+}
+1. Pode devolver um objeto do tipo Object?
+
+R: Este método deve devolver um objeto cujo tipo seja Número ou alguma subclasse de Número. 
+Logo não, porque nem todo Object é um Número.
+Genericamente um método que retorna <T> só pode retornar objetos de <T> ou de qualquer subclasse de <T>
+mas não se uma superclasse de <T>
+
+2. Pode devolver um objeto do tipo NúmeroImaginário?
+
+R: Sim, pois NúmeroImaginário é um Número.

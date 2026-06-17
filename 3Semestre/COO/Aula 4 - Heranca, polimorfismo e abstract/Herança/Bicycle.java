@@ -1,31 +1,25 @@
 public class Bicycle {
-    private int cadence;
-    private int gear;
-    private int speed;
-    // adiciona uma variável de instância para o ID do objeto
-    private int id;
-
-    public Bicycle(int cadence, int gear, int speed) {
-        this.cadence = cadence;
-        this.gear = gear;
-        this.speed = speed;
-        // incrementa o número de bicicletas e atribui o ID
-        numberOfBicycles++;
-        this.id = numberOfBicycles;
+    // a classe Bicycle tem três campos
+    public int cadence, gear, speed;
+    // a classe Bicycle tem um construtor
+    public Bicycle(int startCadence,
+                    int startSpeed,
+                    int startGear) {
+        gear = startGear;
+        cadence = startCadence;
+        speed = startSpeed;
     }
-
-    // adiciona uma variável de classe para o número de
-    // objetos Bicycle instanciados, ou seja é como se
-    // fosse um contador de objetos, ou uma variável global para a classe
-    private static int numberOfBicycles = 0;
-
-    // como esse método é estático, ele pertence à classe e pode ser chamado sem a necessidade de criar um objeto da classe
-    // ex: Math.sqrt(4) ou Bicycle.getNumberOfBicycles()
-    public static int getNumberOfBicycles() {
-        return numberOfBicycles;
+    // a classe Bicycle tem quatro métodos
+    public void setCadence(int newValue) {
+        cadence = newValue;
     }
-
-    public int getId() {
-        return id;
+    public void setGear(int newValue) {
+        gear = newValue;
+    }
+    public void applyBrake(int decrement) {
+        speed -= decrement;
+    }
+    public void speedUp(int increment) {
+        speed += increment;
     }
 }

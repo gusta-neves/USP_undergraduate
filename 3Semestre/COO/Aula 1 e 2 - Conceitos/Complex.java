@@ -4,6 +4,9 @@ public interface Complex {
     // como vai implementar, sendo que obrigatorialmente deve implementar.
     // Note que não precisamos de construtores
 
+    // Interface é um contrato, onde cada classe que vai implementar ela
+    // Deve escolher como vai implementar esses métodos com esses tipos (de parâmetro e de retorno).
+
     double realPart();
     double imaginaryPart();
 

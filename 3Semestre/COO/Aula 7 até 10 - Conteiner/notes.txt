@@ -1,0 +1,41 @@
+Objetivo é ter coleções de ED que para cada tipo abstrado de ED tenha uma interface.
+A ideia é deslocar ao máximo implementação do uso da ED.
+
+Similar ao que fizemos no EP1 de AED II com grafos (implementação por matriz e por lista).
+
+Ex:
+
+<<interface>> colection
+|
+|-- <<interface>> Set
+|   |-- <<interface>> SortedSet
+|
+|-- <<interface>> List
+|
+|-- <<interface>> Queue
+|   |-- <<interface>> Deque
+
+
+<<interface>> Map
+|
+|-- <<interface>> SortedMap
+
+-------------- VISÃO GERAL DAS INTERFACES ---------------------------
+
+- Collection: uma coleção representa um grupo de objetos
+conhecidos como elementos
+- Set: uma coleção que não possui elementos duplicados
+(um conjunto matemático)
+- List: um conjunto ordenado (uma sequência) de elementos
+- Queue: uma coleção usada para armazenar múltiplos
+elementos antes que eles sejam processados (pode
+não ser FIFO)
+- Deque: uma coleção usada para armazenar múltiplos
+elementos antes que eles sejam processados (pode
+ser usada como FIFO ou LIFO)
+- Map: um objeto que associa chaves a valores. Não guarda
+chaves duplicadas
+- SortedSet: um Set que provê uma ordem total para seus
+elementos (ordem natural ou definida por Comparator)
+- SortedMap: um Map que provê uma ordem total para as chaves de
+seus elementos

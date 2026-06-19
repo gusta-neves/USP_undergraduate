@@ -1,0 +1,26 @@
+Classes abstratas e interfaces são parecidas, ambas não podem
+ser instanciadas
+- Em classes abstratas, você pode declarar campos que não são
+estáticos e final, e declarar métodos concretos que sejam
+public, protected e private
+- Em interfaces, todos os campos são public, static e final
+
+
+Qual usar?
+
+Use classes abstratas se:
+    • você quiser compartilhar estado e implementação entre classes
+relacionadas
+    • houver uma relação forte de herança (é um)
+    • você precisar de campos de instância e métodos com visibilidade
+    protected ou private
+    • quiser concentrar lógica comum em uma superclasse base
+
+Use interfaces se:
+    • você quiser definir um contrato para classes possivelmente não
+    relacionadas
+    • o foco estiver no comportamento esperado, e não em estado
+    compartilhado
+    • você quiser aproveitar herança múltipla de tipo
+    • uma implementação padrão com default for útil, sem modelar
+    estado de instância

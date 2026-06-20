@@ -1,0 +1,11 @@
+List<? extends Animal>
+= lista de Animal ou FILHOS
+
+✔ posso ler como Animal
+❌ não posso adicionar
+
+List<? super Animal>
+= lista de Animal ou PAIS
+
+✔ posso adicionar Animal e Cachorro
+❌ ao ler, só Object

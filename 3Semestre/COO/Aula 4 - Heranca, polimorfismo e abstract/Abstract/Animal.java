@@ -1,8 +1,8 @@
 public abstract class Animal {
-    public String name;
+    protected String nome;
 
-    public Animal(String name) {
-        this.name = name;
+    public Animal(String nome) {
+        this.nome = nome;
     }
 
     public abstract void emitirSom();

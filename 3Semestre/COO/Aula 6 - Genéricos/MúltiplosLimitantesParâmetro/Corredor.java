@@ -1,0 +1,3 @@
+interface Corredor {
+    void correr();
+}

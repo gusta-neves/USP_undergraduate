@@ -1,0 +1,3 @@
+interface Nadador {
+    void nadar();
+}

@@ -1,0 +1,36 @@
+- Usada para representar grupos de objetos chamados de
+elementos
+- É o tipo usado para passar coleções de objetos da forma mais
+geral possível
+- Todas as suas implementações possuem um construtor de
+conversão, que inicializa sua coleção com uma lista de
+elementos armazenadas em uma implementação qualquer de
+Collection
+
+Exemplo:
+Suponha que eu tenha uma Collection<String> c que pode
+ser de qualquer tipo (pode ser um List, Set, etc.). Para criar uma
+nova ArrayList (uma implementação de List) com todos os
+elementos de c:
+
+List<String> list = new ArrayList<String>(c);
+// ou, se Java ≥ 7:
+List<String> list = new ArrayList<>(c);
+
+------------------ MÉTODOS ----------------
+
+A interface garante a implementação de operações básicas, tais
+como:
+
+boolean add(E e)
+boolean addAll(Collection<? extends E> c)
+void clear()
+boolean contains(Object o)
+boolean containsAll(Collection<?> c)
+boolean isEmpty()
+Iterator<E> iterator()
+boolean remove(Object o)
+boolean removeAll(Collection<?> c)
+boolean retainAll(Collection<?> c)
+int size()
+<T> T[] toArray(T[] a)

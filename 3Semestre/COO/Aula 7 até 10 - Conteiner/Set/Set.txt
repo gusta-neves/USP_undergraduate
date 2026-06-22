@@ -1,0 +1,7 @@
+- Set é uma Collection que não contém elementos duplicados
+- Uma instância de Set não possui um par de elementos e1 e e2
+tais que e1.equals(e2), e possuem pelo menos um elemento
+null.
+- É o equivalente ao conceito de conjuntos da matemática
+- Set oferece apenas os métodos especificados em Collection,
+mas adiciona a garantia de não duplicidade

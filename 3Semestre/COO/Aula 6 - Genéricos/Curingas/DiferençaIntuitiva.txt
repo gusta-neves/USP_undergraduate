@@ -5,7 +5,7 @@ List<? extends Animal>
 ❌ não posso adicionar
 
 List<? super Animal>
-= lista de Animal ou PAIS
+= lista de Animal ou Pais
 
 ✔ posso adicionar Animal e Cachorro
 ❌ ao ler, só Object

@@ -1,0 +1,17 @@
+A extensão no nome do arquivo é meramente uma CONVENÇÃO! Para abertura de programa de certas extensões em certos programas.
+Exemplo ".pdf" no Chrome.
+Não dita nada sobre o conteúdo do arquivo. Exemplo um código em C com ".jpg" vai mudar que ele vai tentar abrir o arquivo
+em um programa de visualização de imagem.
+
+Java usa UTF-16 (Dado todos os alfabetos codifica ele para número em bit, similar ao ASCII). Nesse caso cada caractere tem 16 bits.
+UTF é grande o suficiente para ter de todas as linguas do mundo, até mesmo emojis.
+
+Interface Reader ou Writer
+
+FileReader e FileWriter são classes especializadas em E/S em arquivos.
+
+% ------------------------------
+
+Charset é uma coleção de caracteres
+
+Um encoding é um mapeamento de sequências de bits a um charset

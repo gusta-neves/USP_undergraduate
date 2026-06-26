@@ -10,7 +10,7 @@
  * T extends Animal & Corredor & Nadador
  *
  * Todo tipo que eu usar como T precisa ser um Animal, implementar Corredor e implementar Nadador.
- */
+*/
 
 class Competidor<T extends Animal & Corredor & Nadador> {
 

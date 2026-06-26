@@ -1,0 +1,28 @@
+O map associa uma chave (não necessariamente inteiro) a um valor (que pode ser um Conjunto, um truque para "apontar" para mais
+de um valor).
+Um map não pode possuir chaves duplicadas. Além disso uma chave está associada a no máximo um valor.
+É o equivalente ao conteceito matemática de função.
+
+Métodos principais
+básicos: put, get, remove, containsKey
+em massa: putAll, clear
+visões como coleção: keySet, entrySet, values
+
+O arcabouço provê três implementações de propósito geral para a interface Map<K,V>:
+• HashMap — implementação mais eficiente, não há garantia de ordem.
+• TreeMap — implementação da interface SortedMap<K,V>, garante interação na ordem definida pelas chaves
+• LinkedHashMap — implementação quase tão eficiente a HashMap, mas permite iteração na mesma ordem em que os elementos foram inseridos
+
+Detalhamento das operações básicas
+
+- put(K key, V value) associa o valor especificado (value) à chave especificada (key)
+- get(Object key) devolve o valor associado à chave key ou null se não houver nada associado a essa chave
+- containsKey(Object key) devolve true se a instância contiver algum mapeamento para essa chave
+- containsValue(Object value) devolve true se o mapa possuir uma ou mais chaves que apontam para o valor especificado
+- size() devolve o número de mapeamentos chave–valor dessa instância
+- isEmpty() devolve true se esse mapa não tiver nenhum par  chave–valor
+
+Operaçõoes em massa
+
+- clear: remove todos os mapeamentos
+- putAll: análogo a Collection.addAll

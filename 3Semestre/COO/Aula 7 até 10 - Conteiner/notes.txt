@@ -1,14 +1,14 @@
-Objetivo é ter coleções de ED que para cada tipo abstrado de ED tenha uma interface.
+Objetivo é ter coleções de ED que para cada tipo abstrato de ED tenha uma interface.
 A ideia é deslocar ao máximo implementação do uso da ED.
 
 Similar ao que fizemos no EP1 de AED II com grafos (implementação por matriz e por lista).
 
 Ex:
 
-<<interface>> colection
+<<interface>> colection (mais genérica)
 |
 |-- <<interface>> Set
-|   |-- <<interface>> SortedSet
+|   |-- <<interface>> SortedSet (mais específica)
 |
 |-- <<interface>> List
 |
@@ -39,26 +39,6 @@ chaves duplicadas
 elementos (ordem natural ou definida por Comparator)
 - SortedMap: um Map que provê uma ordem total para as chaves de
 seus elementos
-
---------------- OPERAÇÕES EM MASSA ----------------------------------
-
-Operações em massa
-(bulk operations) são operações que ocorrem em uma Collection
-inteira. Você pode implementar essas operações usando as
-operações básicas, mas na maioria dos casos isso seria ineficiente.
-
-- containsAll: devolve true se a instância contiver todos os
-elementos da coleção passada como parâmetro
-- addAll: adiciona à instância todos os elementos da coleção
-- removeAll: remove da coleção os elementos que também
-estiverem na coleção do parâmetro
-- retainAll: remove da instância todos os elementos que não
-estiverem contidos na coleção parâmetro (ou seja,
-mantém os elementos que estiverem contidos nas
-duas coleções)
-- clear: remove todos os elementos da instância
-Os métodos addAll, removeAll e retainAll devolvem true se a instância foi
-modificada durante a operação.
 
 --------------- OPERAÇÕES COM VETORES -------------------------------
 

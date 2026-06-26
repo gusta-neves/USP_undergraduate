@@ -4,6 +4,7 @@ public class Main {
         CaixaGenérica<String> caixaDeStrings = new CaixaGenérica<>();
 
         caixaDeInteiros.guardar(123);
+        // caixaDeInteiros.guardar("oi");
         System.out.println(caixaDeInteiros.obter()); // Saída: 123
         caixaDeStrings.guardar("Olá, mundo!");
 

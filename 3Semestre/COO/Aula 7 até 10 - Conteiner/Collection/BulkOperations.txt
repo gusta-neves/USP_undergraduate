@@ -1,0 +1,19 @@
+--------------- OPERAÇÕES EM MASSA ----------------------------------
+
+Operações em massa
+(bulk operations) são operações que ocorrem em uma Collection
+inteira. Você pode implementar essas operações usando as
+operações básicas, mas na maioria dos casos isso seria ineficiente.
+
+- containsAll: devolve true se a instância contiver todos os
+elementos da coleção passada como parâmetro
+- addAll: adiciona à instância todos os elementos da coleção
+- removeAll: remove da coleção os elementos que também
+estiverem na coleção do parâmetro
+- retainAll: remove da instância todos os elementos que não
+estiverem contidos na coleção parâmetro (ou seja,
+mantém os elementos que estiverem contidos nas
+duas coleções)
+- clear: remove todos os elementos da instância
+Os métodos addAll, removeAll e retainAll devolvem true se a instância foi
+modificada durante a operação.
